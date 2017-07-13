@@ -1,0 +1,14 @@
+---
+applications:
+- name:    bms-push-email-sample
+  host:    bms-push-email-sample
+  memory:  128M
+  buildpack: sdk-for-nodejs
+  instances: 1
+  stack: cflinuxfs2
+  services:
+      - bms-push-notifications
+  env:
+      SENDGRID_API_KEY: 
+      FROM_EMAIL: 
+      IMFPUSH: imfpush_Dev
